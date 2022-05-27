@@ -28,9 +28,12 @@ function backspaceCompare(S, T) {
         tArr.push(T[i]);
       }
     }
-    sArr = sArr.join("");
-    tArr = tArr.join("");
+    sArr = sArr.join(",");
+    tArr = tArr.join(",");
     //return sArr === tArr;
+    //console.log(sArr)
+    //console.log(tArr)
     console.log(sArr===tArr)
   }
 backspaceCompare("ab#c","ab#c")
+backspaceCompare("a#c","b")
